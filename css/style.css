@@ -1,0 +1,57 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+  /* ============================================================
+  Body Form
+
+
+============================================================ */
+.naturalscircles-page {
+margin-top: 80px;
+padding-bottom: 80px; }
+.naturalscircles-page h3.form-title {
+margin: 0;
+margin-bottom: 10px;
+padding: 0;
+font-size: 20px;
+font-family: "Lato" ;
+color: #80379b;
+text-transform: uppercase; }
+.naturalscircles-page h3.form-title:after {
+content: '';
+width: 60px;
+height: 1px;
+background: #80379b;
+display: block;
+margin-top: 6px; }
+.naturalscircles-page .single {
+margin-top: 40px; }
+.naturalscircles-page .single .form-control {
+min-height: 44px;
+border-radius: 20px;
+border: 1px solid #80379b;
+box-shadow: none; }
+.naturalscircles-page .single .form-control:focus {
+  border-color: #ff733c; }
+  .btn {
+border: 1px solid #80379b;
+font-size: 16px;
+font-family: "Lato" ;
+border-radius: 20px;
+padding: 8px 15px;
+-webkit-transition: 0.4s ease-in-out;
+-moz-transition: 0.4s ease-in-out;
+-ms-transition: 0.4s ease-in-out;
+transition: 0.4s ease-in-out;
+color: #666; }
+.btn:hover {
+border-color: #ff733c; }
+
+.btn-theme {
+background: #80379b;
+color: #fff;
+border-color: #80379b; }
+.btn-theme:hover {
+color: #fff; }
+
+
+

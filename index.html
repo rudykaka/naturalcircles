@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html >
+<head>
+<title>Coding Challange</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+  
+</head>
+
+<body>
+ <div class="collapse bg-inverse" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 py-4">
+            <h4 class="text-white"><i class="fa fa-file-text-o" fa-5x aria-hidden="true"></i> About</h4>
+            <p class="text-muted">Add some information about the Natural Cirlices below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+          </div>
+          <div class="col-sm-4 py-4">
+            <h4 class="text-white"><i class="fa fa-commenting-o" fa-5x aria-hidden="true"></i> Contact</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white"><i class="fa fa-instagram" aria-hidden="true"></i> Follow on Instagram</a></li>
+              <li><a href="#" class="text-white"><i class="fa fa-facebook" aria-hidden="true"></i> Like on Facebook</a></li>
+              <li><a href="#" class="text-white"><i class="fa fa-envelope-o" aria-hidden="true"></i> Email us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-inverse bg-inverse">
+      <div class="container d-flex justify-content-between">
+<img src="logo.svg" alt="Logo" width="42" height="42" style="margin:4px 0 6px">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+
+<div ng-app="ngemailApp" ng-controller="ngemailCtrl">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<div class="naturalscircles-page">
+<h3 class="form-title">Work Assignment</h3>
+<p>The form below was developed as a coding challange for the Front-end role at Natural Circles</p>
+<form accept-charset="utf-8" name="personForm" novalidate ng-submit="personForm.$valid &&sendForm()">
+
+
+<div class="row">
+<div class="col-sm-6 single">
+<input type="text" class="form-control" name="" value="" placeholder="Your Name">
+</div>
+<div class="col-sm-6 single">
+<input class="form-control" type="text" name="email" ng-model="txtmail" ng-pattern="/^[a-z0-9!#$%&'*+/=?^_`{|}~.-]+@gmail\.com|msn\.com|hotmail\.com|live\.com|msn\.com|aol\.com|yahoo\.com$/i" required placeholder="Please type a valid email" />
+
+<span style="color:Red" ng-show="personForm.email.$error.required"> Required! </span>
+<span style="color:Red" ng-show="personForm.email.$dirty&&personForm.email.$error.pattern">Please Enter Valid Email</span></div>
+<div class="col-sm-6 single">
+<input type="text" class="form-control" name="" value="" placeholder="Phone Number">
+</div>
+<div class="col-sm-6 single">
+<input type="text" class="form-control" name="" value="" placeholder="Subject">
+</div>
+<div class="col-sm-12 single">
+<button type="submit" class="btn btn-theme">Register</button>
+
+</div>
+</div>
+<span> {{msg}} </span>
+</form>
+</div>
+</div>
+</div>
+</div></div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+   <script src="js/bootstrap.min.js"></script>
+     <script src="https://opensource.keycdn.com/angularjs/1.6.2/angular.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
